@@ -38,8 +38,16 @@ class EquiposController extends Controller
      */
     public function store(Request $request)
     {
+      
+        $request -> validate([
+            'Nombre_Equipo' => 'required',
+            'Nombre_de_DT' => 'required'
+            
+           
+        ]);
         //$DatosDeEquipo=request()->all();
         $DatosDeEquipo=request()->except('_token');
+        //dd($DatosDeEquipo);
         
         if($request->hasFile('Logo')){
             $DatosDeEquipo['Logo']=$request->file('Logo')->store('uploads','public');

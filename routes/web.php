@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 Route::view('prueba','pruebacreate');
 Route::resource('Equipos','EquiposController');
+//Route::view('p','FIntegrantes.I_create');
+Route::resource('Integrantes','IntegrantesController');
+

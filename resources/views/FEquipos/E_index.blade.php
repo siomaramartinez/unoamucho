@@ -37,7 +37,7 @@
                   @foreach($equipo as $equipoint)
                     <tr>
                       <td><form style="vertical-align: inherit;"><form style="vertical-align: inherit;">{{$loop->iteration}}</form></form></td>
-                      <td><form style="vertical-align: inherit;"><form style="vertical-align: inherit;"> <img src="{{asset('storage').'/'.$equipoint->Logo}}" alt="" width="150"></form></form></td>
+                      <td><form style="vertical-align: inherit;"><form style="vertical-align: inherit;">{{asset('storage').'/'.$equipoint->Logo}} <img src="{{asset('storage').'/'.$equipoint->Logo}}" alt="" width="150"></form></form></td>
                       <td><form style="vertical-align: inherit;"><form style="vertical-align: inherit;">{{$equipoint->Nombre_Equipo}}</form></form></td>
                       <td><span class="tag tag-success"><form style="vertical-align: inherit;"><form style="vertical-align: inherit;">{{$equipoint->Nombre_de_DT}}</form></form></span></td>
                       <td><form style="vertical-align: inherit;"><form style="vertical-align: inherit;">{{$equipoint->PAGO}}</form></form></td>
